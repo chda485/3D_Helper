@@ -1,0 +1,1054 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A06A86C-6AC2-4B06-860F-D04E0E86C5D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_3D_helper</RootNamespace>
+    <AssemblyName>3D_helper</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\formats_win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formats_win.Designer.cs">
+      <DependentUpon>formats_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\main_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\main_window.Designer.cs">
+      <DependentUpon>main_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\modeling_windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\modeling_windows.Designer.cs">
+      <DependentUpon>modeling_windows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\printing_windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\printing_windows.Designer.cs">
+      <DependentUpon>printing_windows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\materials_win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\materials_win.Designer.cs">
+      <DependentUpon>materials_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Forms\programs_win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\programs_win.Designer.cs">
+      <DependentUpon>programs_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\slicers_win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\slicers_win.Designer.cs">
+      <DependentUpon>slicers_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\technologies_win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\technologies_win.Designer.cs">
+      <DependentUpon>technologies_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="utils.cs" />
+    <Compile Include="Forms\win_text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\win_text.Designer.cs">
+      <DependentUpon>win_text.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\formats_win.resx">
+      <DependentUpon>formats_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\main_window.resx">
+      <DependentUpon>main_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\materials_win.resx">
+      <DependentUpon>materials_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\modeling_windows.resx">
+      <DependentUpon>modeling_windows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\printing_windows.resx">
+      <DependentUpon>printing_windows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\programs_win.resx">
+      <DependentUpon>programs_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\slicers_win.resx">
+      <DependentUpon>slicers_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\technologies_win.resx">
+      <DependentUpon>technologies_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\win_text.resx">
+      <DependentUpon>win_text.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="docx\История 3D-моделирования.docx" />
+    <None Include="docx\история 3d-печать.docx" />
+    <None Include="docx\материалы.docx" />
+    <None Include="docx\по 3д-моделирование.docx" />
+    <None Include="docx\слайсеры.docx" />
+    <None Include="docx\технологии.docx" />
+    <None Include="docx\форматы.docx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="windows_images\cackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="windows_images\cutton_exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="windows_images\home_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="windows_images\inscription.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="windows_images\prevp_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="windows_images\extp_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_pc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_pc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_pc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_pc3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\amf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dp3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dsml1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dsml2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dsml3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dxml.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ebm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ebm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ebm3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fdm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fdm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fdm3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\flex1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\flex2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\flex3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hips1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hips2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hips3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\iges.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lender1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lender2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lender3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lender4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lom1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mjm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mjm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mjm3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mx1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mx2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mx3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mx4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\neylon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\neylon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\neylon3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\obj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osinix1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osinix2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osinix3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osinix4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pc3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peek1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peek2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peek3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\petg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\petg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\petg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\photop1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\photop2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\photop3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pla1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pla2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pla3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\poliprop1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\poliprop2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\poliprop3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\polyjet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\polyjet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\polyjet3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\psu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\psu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\psu3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pva1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pva2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pva3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\silicon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\silicon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\silicon3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sls1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sls2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sls3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid edge1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid edge2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid edge3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid edge4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solid4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\step.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\stereolit1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\stereolit2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\stereolit3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\stl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\titan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\titan2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\titan3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tpe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tpe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tpe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vrml.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cinema_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\compas_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dmax_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\blender_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\blender_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\blender_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\blender_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\inventor_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maya_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nx_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nx_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nx_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nx_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidedge_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidedge_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidedge_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidedge_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidworks_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidworks_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidworks_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\solidworks_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dlms_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dlms_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dlms_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dp_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dp_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dp_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ebm_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ebm_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ebm_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fdm_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fdm_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fdm_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lom_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lom_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lom_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mjm_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mjm_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mjm_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\polyjet_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\polyjet_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\polyjet_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sla_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sla_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sla_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sls_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sls_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sls_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dslicer_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gimias_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\invesalius_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\materialize_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mevislab_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osirix_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osirix_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osirix_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\osirix_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\abs_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\absPc_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\absPc_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\absPc_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\flex_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\flex_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\flex_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hips_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hips_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hips_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\neylon_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\neylon_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\neylon_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pc_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pc_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pc_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peek_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peek_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peek_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\petg_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\petg_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\petg_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\photop_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\photop_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\photop_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pla_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pla_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pla_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pp_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pp_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pp_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\psu_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\psu_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\psu_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pva_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pva_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pva_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\silicon_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\silicon_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\silicon_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\titan_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\titan_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\titan_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tpe_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tpe_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tpe_3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
